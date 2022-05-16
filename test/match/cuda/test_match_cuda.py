@@ -3,10 +3,12 @@ import main.util.file.file_util as fu
 
 
 def test_match_cuda():
+    print()
+    print()
     print("Starting test...")
     zip1_name = fu.get_file_name("test/resources/ncceh.zip")
     zip2_name = fu.get_file_name("test/resources/ymca.zip")
-    out = fu.get_file_name("test/output/results.csv")
+    out = fu.get_file_name("test/output/")
     exe = fu.get_file_name("dice-gpu-optimized.exe")
     print("zip1: " + zip1_name)
     print("zip2: " + zip2_name)

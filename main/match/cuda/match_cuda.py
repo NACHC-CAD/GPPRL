@@ -1,3 +1,4 @@
+import main.util.file.file_util as fu
 import base64
 from zipfile import ZipFile
 import json
@@ -8,15 +9,17 @@ import argparse
 import os
 
 
-def match(zip1_name, zip2_name, threshold, outfile, exe="./dice-gpu-optimized.exe"):
+def match(zip1_name, zip2_name, threshold, out_dir, exe="./dice-gpu-optimized.exe"):
     start = time.time()
     z1 = ZipFile(zip1_name)
     z2 = ZipFile(zip2_name)
+    org1 = fu.get_file_prefix_from_path(zip1_name)
+    org2 = fu.get_file_prefix_from_path(zip2_name)
     print("----------------------------------------------------")
     print("Starting match process:")
     print("input1: " + zip1_name)
     print("input2: " + zip2_name)
-    print("output: " + outfile)
+    print("output: " + out_dir)
     print("Matching on:")
     for path in z1.namelist():
         print("  " + path)
@@ -60,16 +63,17 @@ def match(zip1_name, zip2_name, threshold, outfile, exe="./dice-gpu-optimized.ex
                     results[int(line[0])] = int(line[1])
 
     # write the matches to the results file
-    with open(outfile, "w", newline="") as f:
+    out_file = out_dir + "\\" + org1 + "-" + org2 + "-results.csv"
+    with open(out_file, "w", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["dataset 1", "dataset 2"])
+        w.writerow([org1, org2])
         w.writerows(sorted(results.items(), key=lambda item: item[0]))
     end = time.time()
 
     os.remove("./matches.csv")
     os.remove("./dataset1.bin")
     os.remove("./dataset2.bin")
-    print("Results written to: " + outfile)
+    print("Results written to: " + out_file)
     print(f"Finished matching in: {end - start} seconds")
     print()
     print()

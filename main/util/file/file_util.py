@@ -34,6 +34,11 @@ def get_file_prefix(file_name):
     return rtn
 
 
+def get_file_prefix_from_path(file_path):
+    rtn = get_file_name_from_path(file_path)
+    rtn = get_file_prefix(rtn)
+    return rtn
+
 # ---
 #
 # DIRECTORY METHODS
