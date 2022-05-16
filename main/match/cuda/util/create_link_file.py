@@ -1,9 +1,12 @@
 import csv
-
+import os
 import main.util.file.file_util as fu
 
 
 def create_link_file(src_dir):
+    # delete any previously created file
+    fu.delete(src_dir + "\\" + "link-file.csv")
+    # create the link file
     print("Creating link file...")
     print("Dir: " + src_dir)
     print("Files: ")
@@ -76,10 +79,16 @@ def create_file(file_name, src_dir, orgs, out, cols, ncols):
                     row_num = dic2[org2_val]
                 out[row_num][org1_col] = org1_val
                 out[row_num][org2_col] = org2_val
+    # get the column headers
+    headers = [None] * len(cols.keys())
+    for key in cols.keys():
+        val = cols[key]
+        headers[val] = key
     # write the file
     out_file = src_dir + "\\" + "link-file.csv"
     with open(out_file, "w", newline="") as f:
         w = csv.writer(f)
+        w.writerow(headers)
         w.writerows(out)
 
 

@@ -88,3 +88,6 @@ def write_string_to_file(string, file_path):
         text_file.write(string)
 
 
+def delete(path_to_file):
+    if os.path.exists(path_to_file):
+        os.remove(path_to_file)
