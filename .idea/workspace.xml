@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa03e1b4-b640-4d58-86f6-8ff707b82d56" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/match/cuda/match_all_cuda.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/match/cuda/match_all_cuda.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/match/cuda/test_match_cuda.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/match/cuda/test_match_cuda.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/bar.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/test-set-001/bar.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/foo.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/test-set-001/foo.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/ncceh.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/test-set-001/ncceh.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/resources/ymca.zip" beforeDir="false" afterPath="$PROJECT_DIR$/test/resources/test-set-001/ymca.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652672089227</updated>
       <workItem from="1652672091602" duration="21000" />
-      <workItem from="1652672120603" duration="12373000" />
+      <workItem from="1652672120603" duration="13011000" />
     </task>
     <servers />
   </component>
@@ -175,7 +169,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/GPPRL$.coverage" NAME=" Coverage Results" MODIFIED="1652712458805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/match/cuda" />
+    <SUITE FILE_PATH="coverage/GPPRL$.coverage" NAME=" Coverage Results" MODIFIED="1652714185933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/match/cuda" />
     <SUITE FILE_PATH="coverage/GPPRL$match_all_cuda.coverage" NAME="match_all_cuda Coverage Results" MODIFIED="1652711936613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/main/match/cuda" />
     <SUITE FILE_PATH="coverage/GPPRL$list_dir.coverage" NAME="list-dir Coverage Results" MODIFIED="1652673885176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test/file-util" />
   </component>
