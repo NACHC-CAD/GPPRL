@@ -1,3 +1,5 @@
+import time
+
 import main.match.cuda.match_all_cuda as ma
 import argparse
 
@@ -13,8 +15,14 @@ def parse_args():
 
 
 def match_all(input_dir, threshold, output_dir, exe):
+    start = time.time()
     ma.match_all(input_dir, threshold, output_dir, exe)
-
+    print()
+    print()
+    print("Total Elapsed Time: " + str(time.time() - start))
+    print("DONE!")
+    print()
+    print()
 
 if __name__ == "__main__":
     args = parse_args()

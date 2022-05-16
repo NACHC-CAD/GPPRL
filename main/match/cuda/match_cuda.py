@@ -60,8 +60,7 @@ def match(zip1_name, zip2_name, threshold, out_dir, exe="./dice-gpu-optimized.ex
         with open("./matches.csv", "r") as f:
             r = csv.reader(f)
             for line in r:
-                if line[1] != "-1":
-                    results[int(line[0])] = int(line[1])
+                results[int(line[0])] = int(line[1])
 
     # write the matches to the results file
     out_file = out_dir + "\\" + org1 + "-" + org2 + "-results.csv"
