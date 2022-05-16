@@ -24,7 +24,7 @@ def match(zip1_name, zip2_name, threshold, out_dir, exe="./dice-gpu-optimized.ex
     print("Matching on:")
     for path in z1.namelist():
         print("  " + path)
-    print("----------------------------------------------------")
+    print("-------------------------------")
     print()
     print()
 
