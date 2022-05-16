@@ -1,5 +1,6 @@
 import main.util.file.file_util as fu
 import main.match.cuda.match_cuda as mc
+import main.match.cuda.util.create_link_file as link
 
 
 def match_all(input_dir, threshold, output_dir, exe):
@@ -19,6 +20,7 @@ def match_all(input_dir, threshold, output_dir, exe):
         file_name = file_list[0]
         file_list = file_list[1:]
         do_match_all(file_name, file_list, threshold, output_dir, exe)
+    link.create_link_file(output_dir)
     print("Done with match all.")
 
 
