@@ -4,6 +4,7 @@ import main.match.cuda.util.create_link_file as link
 
 
 def match_all(input_dir, threshold, output_dir, exe):
+    fu.mkdirs(output_dir)
     print("Starting match all...")
     print("Input Dir:  " + input_dir)
     print("Output Dir: " + output_dir)
