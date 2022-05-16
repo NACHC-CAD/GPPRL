@@ -68,7 +68,7 @@ def create_file(file_name, src_dir, orgs, out, cols, ncols):
                 dic1[org1_val] = len(out)
                 dic2[org2_val] = len(out)
                 new_row[org1_col] = org1_val
-                new_row[org2_col] = org2_col
+                new_row[org2_col] = org2_val
                 dic1[org1_val] = len(out)
                 dic2[org2_val] = len(out)
                 out.append(new_row)
