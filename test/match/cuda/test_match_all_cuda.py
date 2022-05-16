@@ -12,3 +12,8 @@ def test_match_all():
     exe = fu.get_file_name("dice-gpu-optimized.exe")
     ma.match_all(input_dir, 0.75, output_dir, exe)
     print("Done.")
+
+
+if __name__ == "__main__":
+    test_match_all()
+

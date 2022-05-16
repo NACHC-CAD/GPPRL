@@ -9,7 +9,6 @@ def match_all(input_dir, threshold, output_dir, exe):
     print("Threshold:  " + str(threshold))
     file_list = fu.get_files(input_dir)
     print("Files: ")
-    print(file_list)
     for file_name in file_list:
         print("    " + file_name)
 
@@ -26,8 +25,10 @@ def match_all(input_dir, threshold, output_dir, exe):
 def do_match_all(file_name, file_list, threshold, output_dir, exe):
     print()
     print()
-    print("-------------------------------")
+    print("===============================")
     print("STARTING MATCHES FOR: " + file_name)
+    print(str(len(file_list)) + " FILES REMAINING")
+    print("===============================")
     for file2_name in file_list:
         do_match(file_name, file2_name, threshold, output_dir, exe)
 
