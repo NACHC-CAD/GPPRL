@@ -77,21 +77,26 @@ def create_file(file_name, src_dir, orgs, out, cols, ncols):
             org1_val = int(line[0])
             org2_val = int(line[1])
             if org1_val not in dic1.keys() and org2_val not in dic2.keys():
+                # add the roe
                 new_row = [None]*ncols
-                dic1[org1_val] = len(out)
-                dic2[org2_val] = len(out)
-                new_row[org1_col] = org1_val
-                new_row[org2_col] = org2_val
-                dic1[org1_val] = len(out)
-                dic2[org2_val] = len(out)
+                # add org1 data
+                if org1_val != -1:
+                    new_row[org1_col] = org1_val
+                    dic1[org1_val] = len(out)
+                # add org2 data
+                if org2_val != -1:
+                    new_row[org2_col] = org2_val
+                    dic2[org2_val] = len(out)
                 out.append(new_row)
             else:
                 if org1_val in dic1:
                     row_num = dic1[org1_val]
+                    out[row_num][org1_col] = org1_val
                 else:
                     row_num = dic2[org2_val]
-                out[row_num][org1_col] = org1_val
-                out[row_num][org2_col] = org2_val
+                    out[row_num][org1_col] = org1_val
+                if org2_val != -1:
+                    out[row_num][org2_col] = org2_val
     print("done adding file")
 
 
