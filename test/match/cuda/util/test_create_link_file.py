@@ -6,7 +6,7 @@ def test_create_link_file():
     print()
     print()
     print("Starting test...")
-    src_dir = fu.get_file_name("test/resources/match-results/test-set-001")
+    src_dir = fu.get_file_name("test/resources/match-results/test-set-from-smallest-three")
     link.create_link_file(src_dir)
     print("Done.")
 

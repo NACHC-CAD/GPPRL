@@ -23,6 +23,19 @@ def create_link_file(src_dir):
     for file_name in file_list:
         create_file(file_name, src_dir, orgs, out, cols, col_count)
     print()
+    # get the column headers
+    headers = [None] * len(cols.keys())
+    for key in cols.keys():
+        val = cols[key]
+        headers[val] = key
+    # write the file
+    out_file = src_dir + "\\" + "link-file.csv"
+    with open(out_file, "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(headers)
+        w.writerows(out)
+    print("File created:")
+    print(out_file)
     print("Done creating link file.")
     print()
     print()
@@ -79,19 +92,7 @@ def create_file(file_name, src_dir, orgs, out, cols, ncols):
                     row_num = dic2[org2_val]
                 out[row_num][org1_col] = org1_val
                 out[row_num][org2_col] = org2_val
-    # get the column headers
-    headers = [None] * len(cols.keys())
-    for key in cols.keys():
-        val = cols[key]
-        headers[val] = key
-    # write the file
-    out_file = src_dir + "\\" + "link-file.csv"
-    with open(out_file, "w", newline="") as f:
-        w = csv.writer(f)
-        w.writerow(headers)
-        w.writerows(out)
-
-
+    print("done adding file")
 
 
 
