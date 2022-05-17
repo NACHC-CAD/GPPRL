@@ -76,6 +76,8 @@ def create_file(file_name, src_dir, orgs, out, cols, ncols):
         for line in reader:
             org1_val = int(line[0])
             org2_val = int(line[1])
+            if org1 == "ymca" and org1_val == 1638:
+                print("FOUND IT")
             if org1_val not in dic1.keys() and org2_val not in dic2.keys():
                 # add the roe
                 new_row = [None]*ncols
@@ -89,14 +91,13 @@ def create_file(file_name, src_dir, orgs, out, cols, ncols):
                     dic2[org2_val] = len(out)
                 out.append(new_row)
             else:
-                if org1_val in dic1:
+                if org1_val in dic1 and org2_val not in dic2 and org2_val != -1:
                     row_num = dic1[org1_val]
-                    out[row_num][org1_col] = org1_val
-                else:
+                    out[row_num][org2_col] = org2_val
+                if org2_val in dic2 and org1_val not in dic1 and org1_val != -1:
                     row_num = dic2[org2_val]
                     out[row_num][org1_col] = org1_val
-                if org2_val != -1:
-                    out[row_num][org2_col] = org2_val
+
     print("done adding file")
 
 
