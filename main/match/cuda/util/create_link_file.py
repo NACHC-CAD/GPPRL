@@ -76,8 +76,6 @@ def create_file(file_name, src_dir, orgs, out, cols, ncols):
         for line in reader:
             org1_val = int(line[0])
             org2_val = int(line[1])
-            if org1 == "ymca" and org1_val == 1638:
-                print("FOUND IT")
             if org1_val not in dic1.keys() and org2_val not in dic2.keys():
                 # add the roe
                 new_row = [None]*ncols

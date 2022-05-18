@@ -24,6 +24,7 @@ def match_all(input_dir, threshold, output_dir, exe):
     print()
     print()
 
+
 if __name__ == "__main__":
     args = parse_args()
     match_all(args.input_dir, args.threshold, args.output_dir, args.exe)

@@ -37,10 +37,7 @@ def do_match_all(file_name, file_list, threshold, output_dir, exe, is_first):
     cnt = 0
     for file2_name in file_list:
         cnt = cnt + 1
-        if is_first and cnt == len(file_list):
-            do_match(file2_name, file_name, threshold, output_dir, exe)
-        else:
-            do_match(file_name, file2_name, threshold, output_dir, exe)
+        do_match(file_name, file2_name, threshold, output_dir, exe)
 
 
 def do_match(file1_name, file2_name, threshold, output_dir, exe):
