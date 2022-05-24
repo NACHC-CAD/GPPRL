@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa03e1b4-b640-4d58-86f6-8ff707b82d56" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda_test_set_001.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/test-set-000/test-set-000.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/resources/test-set-000/test-set-001.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda_test_set_000.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../_PPRL/anonlink-entity-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test/match/cuda" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -49,29 +53,7 @@
       <recent name="D:\_WORKSPACES\_ECLIPSE_WORKSPACE\workspace\GPPRL\test\match\cuda" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_match_all_cuda.py">
-    <configuration name="create_link_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="GPPRL" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/main/match/cuda/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main/match/cuda/util/create_link_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test_match_all_cuda_test_set_001">
     <configuration name="test_create_link_file" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="GPPRL" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +76,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_match_all_cuda" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test_match_all_cuda_test_set_000" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="GPPRL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,7 +86,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda_test_set_000.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +95,26 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_match_all_cuda.test_match_all" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="test_match_all_cuda_test_set_001" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="GPPRL" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/match/cuda" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/match/cuda/test_match_all_cuda_test_set_001.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test.match.cuda.test_match_all_cuda_001.test_match_all" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GPPRL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -124,11 +125,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_match_all_cuda.test_match_all&quot;" />
+      <option name="_new_target" value="&quot;test.match.cuda.test_match_all_cuda_001.test_match_all&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in test_match_all_cuda.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_match_all_cuda_test_set_001.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="GPPRL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,17 +140,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/match/cuda/test_match_all_cuda.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/match/cuda/test_match_all_cuda_test_set_001.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_match_all_cuda.py" />
-        <item itemvalue="Python.test_match_all_cuda" />
-        <item itemvalue="Python tests.Python tests for test_match_all_cuda.test_match_all" />
-        <item itemvalue="Python.test_create_link_file" />
-        <item itemvalue="Python.create_link_file" />
+        <item itemvalue="Python.test_match_all_cuda_test_set_001" />
+        <item itemvalue="Python.test_match_all_cuda_test_set_000" />
+        <item itemvalue="Python tests.Python tests in test_match_all_cuda_test_set_001.py" />
+        <item itemvalue="Python.test_match_all_cuda_test_set_001" />
+        <item itemvalue="Python tests.Python tests for test.match.cuda.test_match_all_cuda_001.test_match_all" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +168,7 @@
       <workItem from="1652824023219" duration="760000" />
       <workItem from="1652824869974" duration="2491000" />
       <workItem from="1652836478362" duration="6514000" />
-      <workItem from="1653349681504" duration="1497000" />
+      <workItem from="1653349681504" duration="2488000" />
     </task>
     <servers />
   </component>

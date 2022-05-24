@@ -9,7 +9,7 @@ def test_match_all():
     print("Starting test...")
     start = time.time()
     input_dir = fu.get_file_name("test/resources/test-set-001")
-    output_dir = fu.get_file_name("test/output/match-all-test")
+    output_dir = fu.get_file_name("test/output/match-all-test-001")
     fu.mkdirs(output_dir)
     exe = fu.get_file_name("dice-gpu-optimized.exe")
     ma.match_all(input_dir, 0.75, output_dir, exe)
